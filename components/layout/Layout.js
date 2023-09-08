@@ -1,8 +1,8 @@
-import { Children } from 'react'
+
 import styles from './Layout.module.css'
 import Link from 'next/link'
 
-function Layout({Children}) {
+function Layout({children }) {
     return(
         <>
         <header className={styles.header}>
@@ -12,7 +12,7 @@ function Layout({Children}) {
             </Link>
         </header>
         <div className={styles.container}>
-        {Children}
+        {children }
         </div>
         <footer className={styles.footer}>
         CarSell Next.js project
