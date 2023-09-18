@@ -5,7 +5,6 @@ import carsData from '../../data/CarsData';
 function Hatchback() {
   const router = useRouter()
   const carType = router.query.carType;
-  console.log(carType)
   const filteredCars = carsData.filter(car => car.category === carType)
 
   return <>
